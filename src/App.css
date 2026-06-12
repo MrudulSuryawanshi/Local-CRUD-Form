@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #d2b3b3;
+}
+
+.form-container {
+  background-color: #d2b3b3;
+  padding: 20px;
+  border-radius: 5px;
+  width: 500px;
+  margin: 20px auto;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+label {
+  font-weight: bold;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+button {
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+table {
+  margin: auto;
+  border-collapse: collapse;
+  text-align: center;
+  justify-content: center;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: center;
+}

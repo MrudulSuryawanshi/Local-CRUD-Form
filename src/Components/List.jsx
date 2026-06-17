@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const List = ({ users, deleteUser, editUser }) => {
   return (
@@ -10,9 +10,11 @@ const List = ({ users, deleteUser, editUser }) => {
             <th>FName</th>
             <th>LName</th>
             <th>Email</th>
+            <th>Income</th>
             <th>ContactNo</th>
             <th>Address</th>
             <th>Description</th>
+            <th>Created on</th>
             <th>Action</th>
           </tr>
         </thead>
@@ -23,9 +25,11 @@ const List = ({ users, deleteUser, editUser }) => {
               <td>{user.firstName}</td>
               <td>{user.lastName}</td>
               <td>{user.email}</td>
+              <td>{user.income}</td>
               <td>{user.contactNo}</td>
               <td>{user.address}</td>
               <td>{user.description}</td>
+              <td>{new Date(user.createdAt).toLocaleString()}</td>
               <td>
                 <button onClick={() => deleteUser(user.id)}>Delete</button>
               </td>
@@ -37,7 +41,7 @@ const List = ({ users, deleteUser, editUser }) => {
         </tbody>
       </table>
     </div>
-  )
-}
+  );
+};
 
-export {List}
+export { List };

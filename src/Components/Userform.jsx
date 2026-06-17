@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 
 const Userform = ({ formData, handleChange, adduser, editUserId }) => {
-      const [showPassword, setShowPassword] = useState(false);
+  const [showPassword, setShowPassword] = useState(false);
 
   return (
     <div>
@@ -10,6 +10,7 @@ const Userform = ({ formData, handleChange, adduser, editUserId }) => {
         {
           <div>
             <h1>Form using React</h1>
+
             <label htmlFor="firstname"> First Name </label>
             <input
               type="text"
@@ -55,6 +56,18 @@ const Userform = ({ formData, handleChange, adduser, editUserId }) => {
               required
             />
             <br />
+            <br />
+
+            <label htmlFor="income"> Income </label>
+            <input 
+              type="text"
+              name="income"
+              placeholder="Enter Income"
+              vlaue={formData.income}
+              onChange={handleChange}
+              required
+            />
+            <br/>
             <br />
 
             <label htmlFor="contactno"> Contact Number </label>
@@ -103,6 +116,8 @@ const Userform = ({ formData, handleChange, adduser, editUserId }) => {
             </button>
             <br />
             <br />
+
+            
           </div>
         }
       </form>
@@ -110,4 +125,4 @@ const Userform = ({ formData, handleChange, adduser, editUserId }) => {
   );
 };
 
-export {Userform};
+export { Userform };
